@@ -40,17 +40,3 @@ class Archiver:
     def __remove_tmp_files(self, tmp_file_paths):
         for path in tmp_file_paths:
             os.remove(path)
-
-# dto = ClassificationRequestDto()
-# dto.polynomial_name = 'PolynomialFeatures'
-# dto.classifier_name = 'DecisionTreeClassifier'
-# dto.classifier_params_dictionary = {'max_depth': None, 'min_samples_split': 2, 'random_state': 0}
-# dto.polynomial_params_dictionary = {'degree': 2}
-# dto.test_data_path = 'D:\\Dropbox\універ\\3 курс\\2 семестр\\Візуалізація даних\\team project\\MTestData.txt'
-# dto.train_data_path = 'D:\\Dropbox\універ\\3 курс\\2 семестр\\Візуалізація даних\\team project\\MTrainData.txt'
-# 
-# res = ClassificationService().classify(dto)
-# 
-# res2 = Archiver().archive(res.train_prediction, res.test_prediction)
-# 
-# print('hello')
