@@ -1,4 +1,4 @@
-from ClassificationRequestDto import ClassificationRequestDto
+from classification_project.ClassificationRequestDto import ClassificationRequestDto
 
 
 class ClassificationRequestDtoMapper:

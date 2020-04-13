@@ -3,13 +3,13 @@ from collections import namedtuple
 from flask import session
 from werkzeug.exceptions import BadRequest
 
-from Archiver import Archiver
-from ClassificationResponseDto import ClassificationResponseDto
-from ClassifierEngine import ClassifierEngine
-from ClassifierFactory import ClassifierFactory
-from DataExtractor import DataExtractor
-from MaxScaler import MaxScaler
-from PolynomialFactory import PolynomialFactory
+from classification_project.Archiver import Archiver
+from classification_project.ClassificationResponseDto import ClassificationResponseDto
+from classification_project.ClassifierEngine import ClassifierEngine
+from classification_project.ClassifierFactory import ClassifierFactory
+from classification_project.DataExtractor import DataExtractor
+from classification_project.MaxScaler import MaxScaler
+from classification_project.PolynomialFactory import PolynomialFactory
 
 
 class ClassificationService:
