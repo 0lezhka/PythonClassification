@@ -1,0 +1,2 @@
+python.exe -m pydoc %*
+
