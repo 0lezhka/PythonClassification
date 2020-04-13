@@ -2,7 +2,7 @@ import copy
 
 from sklearn.preprocessing import PolynomialFeatures
 
-from IllegalArgumentException import IllegalArgumentException
+from classification_project.IllegalArgumentException import IllegalArgumentException
 
 
 class PolynomialFactory:

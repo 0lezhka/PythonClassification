@@ -3,10 +3,10 @@ import uuid
 
 from flask import Flask, send_file, request, session
 
-from ClassificationRequestDtoMapper import ClassificationRequestDtoMapper
-from ClassificationService import ClassificationService
-from FileUtils import FileUtils
-from Scheduler import Scheduler
+from classification_project.ClassificationRequestDtoMapper import ClassificationRequestDtoMapper
+from classification_project.ClassificationService import ClassificationService
+from classification_project.FileUtils import FileUtils
+from classification_project.Scheduler import Scheduler
 
 app = Flask(__name__)
 app.secret_key = 'e8fd411b86609d1b6416e1e3da69ab27'
