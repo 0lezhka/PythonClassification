@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
+import { PythonClassificationComponent } from './python-classification/python-classification.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PythonClassificationComponent
   ],
   imports: [
     BrowserModule,
