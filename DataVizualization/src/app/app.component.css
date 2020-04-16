@@ -1,13 +1,13 @@
-.maincontents {
-  min-height: 100%;
+header{
+  justify-content: space-between;
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  height: 10%;
+  background-color: #5c5858;
 }
 
-.footer {
-  flex: 0;
-  bottom: 0;
-  background-color: green;
+nav{
+  list-style: none;
+  flex-direction: row;
 }
 
