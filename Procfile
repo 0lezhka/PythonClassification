@@ -1,0 +1,1 @@
+web gunicorn classification_project.ClassificationController:app
