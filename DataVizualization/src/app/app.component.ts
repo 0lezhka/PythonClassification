@@ -26,8 +26,8 @@ export class AppComponent implements OnInit {
       new Argument('string', 'Multiclass'), new Argument('string', 'Solver')]));
     this.methods.push(new Method('MLPClassifier', [new Argument('list', 'Hidden Layer Sizes'),
       new Argument('string', 'Activation'), new Argument('string', 'Solver'), new Argument('number', 'Alpha')]));
-    this.methods.push(new Method('Linear SVC', [new Argument('string', 'penalty'),
-      new Argument('string', 'Loss'), new Argument('boolean', 'dual'), new Argument('number', 'tol'),
+    this.methods.push(new Method('Linear SVC', [new Argument('string', 'Penalty'),
+      new Argument('string', 'Loss'), new Argument('boolean', 'Dual'), new Argument('number', 'tol'),
         new Argument('number', 'C'), new Argument('string', 'MultiClass'), new Argument('boolean', 'Fit Intercept'),
           new Argument('number', 'Intercept Scaling'), new Argument('string', 'Class Weight'), new Argument('number', 'Verbose'),
             new Argument('number', 'Random State'), new Argument('number', 'Max Iterations')]));

@@ -1,18 +1,29 @@
 .classification{
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 2%;
 }
 
 .field-container{
   display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
   justify-content: center;
-  flex-direction: row;
 }
 
 .field{
   /*display: flex;*/
   /*justify-content: center;*/
   /*flex-direction: row;*/
+  padding: 2%;
+  width: 20%;
 }
 
+ul{
+  list-style: none;
+}
+
+.boolean{
+  margin-top: 5vh;
+  text-align: center;
+}
