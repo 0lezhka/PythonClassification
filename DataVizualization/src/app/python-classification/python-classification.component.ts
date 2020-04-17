@@ -19,6 +19,7 @@ export class PythonClassificationComponent implements OnInit {
     this.service.testData().subscribe(res => {
       this.object = res;
     });
+    console.log(this.method);
   }
 
   private generateNumbers(){

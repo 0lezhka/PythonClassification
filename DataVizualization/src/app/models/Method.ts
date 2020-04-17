@@ -1,7 +1,9 @@
+import {Argument} from './Argument';
+
 export class Method{
   constructor(
     public name: string,
-    public argumentsOfMethod: string[] = [],
+    public argumentsOfMethod: Argument[] = [],
   ) {
   }
 }

@@ -1,5 +1,14 @@
 <div class="classification">
   <h1>{{method.name}}</h1>
-<!--  <p *ngFor="let i of numbers">{{i}}</p>-->
+  <div class="field-container" *ngFor="let argument of method.argumentsOfMethod">
+    <div class="field">
+      <div class="md-form" *ngIf="argument.type === 'string'">
+        <input mdbInput type="text" id="{{argument.name}}" class="form-control">
+        <label for="{{argument.name}}" class="">{{argument.name}}</label>
+      </div>
+    </div>
+  </div>
 </div>
+<!--  <p *ngFor="let i of numbers">{{i}}</p>-->
+
 

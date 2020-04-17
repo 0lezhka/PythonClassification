@@ -4,3 +4,15 @@
   margin-top: 2%;
 }
 
+.field-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.field{
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*flex-direction: row;*/
+}
+
