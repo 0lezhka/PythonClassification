@@ -1,13 +1,11 @@
-.maincontents {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+.nav-text{
+  font-family: 'Bitter', serif;
 }
 
-.footer {
-  flex: 0;
-  bottom: 0;
-  background-color: green;
+
+.basic-dropdown{
+  margin-top: 4%;
+  margin-left: 10%;
 }
 
