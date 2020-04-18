@@ -3,13 +3,15 @@ import uuid
 
 from flask import Flask, send_file, request, session
 
+from classification_project.ApplicationConstants import ApplicationConstants
 from classification_project.ClassificationRequestDtoMapper import ClassificationRequestDtoMapper
 from classification_project.ClassificationService import ClassificationService
 from classification_project.FileUtils import FileUtils
 from classification_project.Scheduler import Scheduler
 
 app = Flask(__name__)
-app.secret_key = 'e8fd411b86609d1b6416e1e3da69ab27'
+app.secret_key = ApplicationConstants.APP_SECRET_KEY.value
+host = ApplicationConstants.CLIENT_HOST.value
 
 mapper = ClassificationRequestDtoMapper()
 classification_service = ClassificationService()
@@ -62,6 +64,15 @@ def classify_and_get_data():
 def set_session_id():
     if 'session_id' not in session:
         session['session_id'] = uuid.uuid1()
+
+
+@app.after_request
+def set_cross_origin(response):
+    response.headers['Access-Control-Allow-Origin'] = host
+    response.headers['Access-Control-Allow-Headers'] = host
+    response.headers['Access-Control-Allow-Methods'] = host
+
+    return response
 
 
 if __name__ == '__main__':
