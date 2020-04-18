@@ -11,7 +11,7 @@ from classification_project.Scheduler import Scheduler
 
 app = Flask(__name__)
 app.secret_key = ApplicationConstants.APP_SECRET_KEY.value
-host = ApplicationConstants.CLIENT_HOST.value
+host = ApplicationConstants.LOCAL_CLIENT_HOST.value
 
 mapper = ClassificationRequestDtoMapper()
 classification_service = ClassificationService()
@@ -19,6 +19,11 @@ file_utils = FileUtils()
 scheduler = Scheduler()
 
 scheduler.schedule_clearing_tmp_folder()
+
+
+@app.route('/', methods=['GET'])
+def home_page():
+    return 'Hello world from PythonClassification!'
 
 
 @app.route('/test-data', methods=['POST'])
@@ -45,6 +50,11 @@ def is_test_data_for_session():
 def is_train_data_for_session():
     return json.dumps({'file_exists': file_utils.is_file_for_session('train_data')}), \
            200, {'ContentType': 'application/json'}
+
+
+@app.route('/classification/methods', methods=['GET'])
+def get_all_classification_methods():
+    return classification_service.get_available_methods()
 
 
 @app.route('/classification', methods=['POST'])
